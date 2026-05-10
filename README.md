@@ -1,4 +1,4 @@
-# 🍷 Wine Rating RAG — Sistema de análisis y consulta de catálogo de vinos
+# 🍷 Segmentación de Vinos - RAG — Sistema de análisis y consulta de catálogo de vinos
 
 **Minería de Datos | Universidad Anáhuac Puebla**
 
