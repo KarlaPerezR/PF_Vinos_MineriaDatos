@@ -6,6 +6,17 @@ Sistema integrado de Machine Learning, almacén de datos (Neon PostgreSQL) y asi
 
 ---
 
+## 👥 Equipo
+
+| Integrante | Rol |
+|---|---|
+| Alejandro Armando Paredes Salcedo | Data Engineer |
+| Karla Beatriz Hernandez Castro | Data Scientist |
+| Karla Angelica Perez Rodriguez | Solution Architect |
+| Melissa Camelo de la Fuente | Data Engineer |
+
+---
+
 ## 🎯 Decisor
 
 **Hugo D'Acosta** — Gerente Comercial y enólogo  
@@ -55,45 +66,19 @@ wine-rating-rag/
 ```
 
 ---
-
-## ⚙️ Instalación
-
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/tu-usuario/wine-rating-rag.git
-cd wine-rating-rag
-```
-
-### 2. Crear y activar entorno virtual
-
-```bash
-python -m venv venv
-
-# Mac / Linux
-source venv/bin/activate
-
-# Windows
-venv\Scripts\activate
-```
-
-### 3. Instalar dependencias
+### Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Descargar los datos
+### Descargar los datos
 
 1. Descarga el dataset desde Kaggle: https://www.kaggle.com/datasets/budnyak/wine-rating-and-price
 2. Crea la carpeta `data/` y coloca los 4 archivos CSV dentro:
    - `Red.csv`, `White.csv`, `Rose.csv`, `Sparkling.csv`
 
-### 5. Configurar credenciales
-
-```bash
-cp .env.example .env
-```
+### Configurar credenciales
 
 Edita el archivo `.env` y agrega tu cadena de conexión de Neon:
 
@@ -101,7 +86,7 @@ Edita el archivo `.env` y agrega tu cadena de conexión de Neon:
 NEON_URL=postgresql://usuario:password@host.neon.tech/neondb?sslmode=require
 ```
 
-### 6. Instalar y configurar Ollama
+### Instalar y configurar Ollama
 
 ```bash
 # Descargar Ollama desde https://ollama.com
@@ -111,13 +96,13 @@ ollama pull llama3.2
 
 Ollama se iniciará automáticamente en segundo plano en `localhost:11434`.
 
-### 7. Iniciar JupyterLab
+### Iniciar JupyterLab
 
 ```bash
 jupyter lab
 ```
 
-Abre `ProyectoFinal_WineRating.ipynb` y ejecuta todas las celdas de arriba a abajo.
+Abre `ProyectoFinal_Vinos.ipynb` y ejecuta todas las celdas de arriba a abajo.
 
 ---
 
@@ -159,25 +144,3 @@ Esquema estrella con 4 tablas:
 5. ¿Qué tan confiable es el modelo predictivo?
 
 ---
-
-## 👥 Equipo
-
-| Integrante | Rol |
-|---|---|
-| Alejandro Armando Paredes Salcedo | Data Engineer |
-| Karla Beatriz Hernandez Castro | Data Scientist |
-| Karla Angelica Perez Rodriguez | Solution Architect |
-| Melissa Camelo de la Fuente | Data Engineer |
-
----
-
-## 📋 Rúbrica cubierta
-
-| Dimensión | Peso | Cobertura |
-|---|---|---|
-| Valor para la decisión | 25% | ✅ Segmentos + predicciones + recomendaciones accionables |
-| Rigor técnico ML | 25% | ✅ Clustering + supervisado + texto + overfitting |
-| Coherencia del sistema | 20% | ✅ ML → Neon → RAG conectados |
-| Uso del RAG | 15% | ✅ 5 preguntas + interfaz + cita de fuentes |
-| Comunicación | 10% | ✅ Narrativa en lenguaje de negocio |
-| Reproducibilidad | 5% | ✅ requirements.txt + seeds fijos + README |
